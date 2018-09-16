@@ -13,115 +13,115 @@
 O_GRD:
    fadeout(X_FADE)
 
-   get(A,VAR_GRDREADY)
-   if(A,CE,0,grd_notready)
+   ;get(A,VAR_GRDREADY)
+   ;if(A,CE,0,grd_notready)
    goto(grd_ready)
 
-grd_notready:
-   lmap(MAP_SHIP, 5,6)
-   lockoff
-   partyarr
-   warp(0, 5,4, UP)
-   warp(1, 4,4, UP)
-   warp(2, 2,5, UP)
-   warp(3, 6,4, UP)
-   frame(2,CEL_ASLEEP)
-   ldude(4,CH_RYAN, 11,6, DOWN,STAND)
-   fadein(X_FADE)
-   sleep(32)
-   walk(4,LEFT,4)
-   sync
-   get(A,VAR_GRD1)
-   if(A,CE,1,grd_notready2)
-   put(1,VAR_GRD1)
-   walk(4,UP,2)
-   sync
-   sleep(16)
-   say(SJ_ETXT1A)
-   sleep(16)
+;grd_notready:
+   ;lmap(MAP_SHIP, 5,6)
+   ;lockoff
+   ;partyarr
+   ;warp(0, 5,4, UP)
+   ;warp(1, 4,4, UP)
+   ;warp(2, 2,5, UP)
+   ;warp(3, 6,4, UP)
+   ;frame(2,CEL_ASLEEP)
+   ;ldude(4,CH_RYAN, 11,6, DOWN,STAND)
+   ;fadein(X_FADE)
+   ;sleep(32)
+   ;walk(4,LEFT,4)
+   ;sync
+   ;get(A,VAR_GRD1)
+   ;if(A,CE,1,grd_notready2)
+   ;put(1,VAR_GRD1)
+   ;walk(4,UP,2)
+   ;sync
+   ;sleep(16)
+   ;say(SJ_ETXT1A)
+   ;sleep(16)
 
-   call(grd_fireball)
+   ;call(grd_fireball)
 
-   quake
-   frame(0,CEL_ATTEN)
-   frame(1,CEL_ATTEN)
-   frame(2,CEL_ATTEN)
-   frame(3,CEL_ATTEN)
-   frame(4,CEL_ATTEN)
-   sleep(16)
-   quake
-   sleep(16)
-   face(0,DOWN)
-   face(1,DOWN)
-   face(2,DOWN)
-   face(3,DOWN)
-   face(4,DOWN)
-   sleep(32)
-   pan(5,6)
-   sleep(32)
-   say(SJ_ETXT1)
-   sleep(16)
-   say(SJ_ETXT2)
-   face(1,RIGHT)
-   sleep(16)
-   say(SJ_ETXT3)
-   face(2,RIGHT)
-   sleep(16)
-   say(SJ_ETXT4)
-   face(4,LEFT)
-   sleep(16)
-   say(SJ_ETXT5)
-   sleep(16)
-   say(SJ_ETXT6)
-   sleep(16)
-   say(SJ_ETXT7)
-   sleep(16)
-   say(SJ_ETXT8)
-   sleep(16)
+   ;quake
+   ;frame(0,CEL_ATTEN)
+   ;frame(1,CEL_ATTEN)
+   ;frame(2,CEL_ATTEN)
+   ;frame(3,CEL_ATTEN)
+   ;frame(4,CEL_ATTEN)
+   ;sleep(16)
+   ;quake
+   ;sleep(16)
+   ;face(0,DOWN)
+   ;face(1,DOWN)
+   ;face(2,DOWN)
+   ;face(3,DOWN)
+   ;face(4,DOWN)
+   ;sleep(32)
+   ;pan(5,6)
+   ;sleep(32)
+   ;say(SJ_ETXT1)
+   ;sleep(16)
+   ;say(SJ_ETXT2)
+   ;face(1,RIGHT)
+   ;sleep(16)
+   ;say(SJ_ETXT3)
+   ;face(2,RIGHT)
+   ;sleep(16)
+   ;say(SJ_ETXT4)
+   ;face(4,LEFT)
+   ;sleep(16)
+   ;say(SJ_ETXT5)
+   ;sleep(16)
+   ;say(SJ_ETXT6)
+   ;sleep(16)
+   ;say(SJ_ETXT7)
+   ;sleep(16)
+   ;say(SJ_ETXT8)
+   ;sleep(16)
 
-grd_notready3:
-   fadeout(X_ROLL)
-   partynor
-   lockon(0)
-   set(B,22)
-   set(C,119)
-   goto(OVER_WARP_NF2)
+;grd_notready3:
+   ;fadeout(X_ROLL)
+   ;partynor
+   ;lockon(0)
+   ;set(B,22)
+   ;set(C,119)
+   ;goto(OVER_WARP_NF2)
 
-grd_fireball:
-   sfx(SFX_ENGULF)
-   ldude(5,NPC_FIRE2,   2,13,DOWN,STAND)
-   setz(5,160)
-   anim(5)
-   walk(5,RIGHT,4)
-   set(A,160)
-   set(B,0)
-grd_zloop:
-   setz(5,A)
-   sub(A,5)
-   inc(B)
-   cif(B,CE,16,grd_fireball_lock)
-   sleep(2)
-   if(B,CL,32,grd_zloop)
-   sync
-   del(5)
-   end
-grd_fireball_lock:
-   pan(5,8)
-   face(0,DOWN)
-   face(1,DOWN)
-   face(3,DOWN)
-   face(4,DOWN)
-   end
+;grd_fireball:
+   ;sfx(SFX_ENGULF)
+   ;ldude(5,NPC_FIRE2,   2,13,DOWN,STAND)
+   ;setz(5,160)
+   ;anim(5)
+   ;walk(5,RIGHT,4)
+   ;set(A,160)
+   ;set(B,0)
+;grd_zloop:
+   ;setz(5,A)
+   ;sub(A,5)
+   ;inc(B)
+   ;cif(B,CE,16,grd_fireball_lock)
+   ;sleep(2)
+   ;if(B,CL,32,grd_zloop)
+   ;sync
+   ;del(5)
+   ;end
+;grd_fireball_lock:
+   ;pan(5,8)
+   ;face(0,DOWN)
+   ;face(1,DOWN)
+   ;face(3,DOWN)
+   ;face(4,DOWN)
+   ;end
 
-grd_notready2:
-   face(0,DOWN)
-   face(1,DOWN)
-   face(3,DOWN)
-   face(4,UP)
-   sleep(16)
-   say(SJ_ETXT9)
-   sleep(16)
-   goto(grd_notready3)
+;grd_notready2:
+  ;face(0,DOWN)
+   ;face(1,DOWN)
+   ;face(3,DOWN)
+   ;face(4,UP)
+   ;sleep(16)
+   ;say(SJ_ETXT9)
+   ;sleep(16)
+   ;goto(grd_notready3)
 
 
 grd_ready:
@@ -146,7 +146,7 @@ grd_ready:
    yesno(A)
    say(S49_ASK1)
    sleep(16)
-   if(A,CE,0,grd_notready3)
+   ;if(A,CE,0,grd_notready3)
    sleep(16)
    walk(4,RIGHT,5)
    sleep(16)
@@ -426,7 +426,7 @@ grd_isle:
    sleep(8)
    song_pause
    bsong(SNG_FIGHT1)
-   battle(0,0,1,0,0)
+   battle(160,0,1,0,0)
    song_resume
    del(6)
    del(7)
@@ -464,8 +464,8 @@ grd_isle:
    sync
    sleep(8)
    song_pause
-   bsong(SNG_FIGHT1)
-   battle(0,0,1,0,0)
+   bsong(SNG_BOSS1)
+   battle(161,0,1,0,0)
    song_resume
    ldude(10,NPC_KRAIT2, $0b,$0a,DOWN,STAND)
    frame(10,1)
