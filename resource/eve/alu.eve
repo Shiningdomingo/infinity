@@ -560,6 +560,7 @@ alu_scene43a:
    fadein(X_FADE)
 
    sleep(16)
+   bsong(SNG_FIGHT1)
    battle(War_Alutha_Fight1,0,1,0,0)
    del(4)
    del(5)
@@ -573,6 +574,7 @@ alu_scene43a:
    sync
 
    sleep(4)
+   bsong(SNG_FIGHT1)
    battle(War_Alutha_Fight2,0,1,0,0)
    del(4)
    del(5)
@@ -614,6 +616,7 @@ alu_scene43a:
    walk(4,UP,2)
    sync
    sleep(4)
+   bsong(SNG_FIGHT1)
    battle(War_Alutha_Fight3,0,1,0,0)
    del(4)
 ;   revive
@@ -665,6 +668,7 @@ alu_scene43a:
 
    partyset(0,PARTY_CONNOR)
    partyset(1,PARTY_VICTOR)
+   bsong(SNG_FIGHT1)
    battle(War_Alutha_Fight4,0,1,0,0)
 
    ; restore for a moment
@@ -739,6 +743,7 @@ alu_scene43a:
    walk(4,RIGHT,2)
    sync
    sleep(4)
+   bsong(SNG_FIGHT1)
    battle(War_Alutha_Fight5,0,1,0,0)
    del(4)
 ;   revive
@@ -780,6 +785,7 @@ alu_scene43a:
    walk(4,DOWN,1)
    sync
    sleep(4)
+   bsong(SNG_FIGHT1)
    battle(War_Alutha_Fight6,0,1,0,0)
    del(4)
    fadein(X_FADE)
@@ -832,6 +838,7 @@ alu_scene43a:
    partyset(2,PARTY_VICTOR)
    partyset(3,PARTY_ELYA)
    sleep(4)
+   bsong(SNG_FIGHT1)
    battle(War_Alutha_Fight7,0,1,0,0)
 ;   revive
    reform
@@ -853,6 +860,7 @@ alu_scene43a:
    walk(4,RIGHT,4)
    sync
    sleep(4)
+   bsong(SNG_FIGHT1)
    battle(War_Alutha_Fight8,0,1,0,0)
    del(4)
 ;   revive
@@ -916,6 +924,7 @@ alu_scene43a:
    walk(4,LEFT,2)
    sync
    sleep(4)
+   bsong(SNG_BOSS1)
    battle(War_Alutha_Boss,0,1,5,1)
    setbosspal(BOSSPAL_OMEGA)
    fadein(X_FADE)
