@@ -1095,7 +1095,7 @@ joy_scene66:
    say(S66_ETXT25)
 
    song_off
-   bsong(SNG_BOSS1)
-   battle(0,0,1,0,0)
+   bsong(SNG_LASTBOSS)
+   battle(163,0,1,0,0)
    song_off
    goto(end_scene67)
