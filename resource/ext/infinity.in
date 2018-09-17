@@ -80,17 +80,17 @@ Enemy_Golem4    e_golem4.bin
 Enemy_Omega2    e_omega.bin
 Enemy_Turmayor  en_tw2.bin
 Enemy_Horf	e_horf.bin
-Enemy_Golem5	e_blank.bin
+Enemy_Golem5	e_golem4.bin
 Enemy_Ottorak	e_ottor.bin
 Enemy_Zombie	e_zombie.bin
 Enemy_FloatingEye e_eye.bin
 
 Enemy_EvilArmor e_armora.bin
 Enemy_Lich	e_lich.bin
-Enemy_Demon	e_blank.bin
-Enemy_SmallYeti e_blank.bin
+Enemy_Demon	e_krait.bin
+Enemy_SmallYeti e_alutha.bin
 Enemy_Sasquatch e_blank.bin
-Enemy_Snowflake e_blank.bin
+Enemy_Snowflake e_snowflake.bin
 Enemy_FloatingSword e_blank.bin
 Enemy_Mummy	e_mummy.bin
 Enemy_FireWerdge e_fwerdg.bin
@@ -129,9 +129,9 @@ Boss_Omega    bossomeg.bin
 Boss_Omega2   bossomeg.bin
 Boss_Omega3   bossomeg.bin
 
-Boss_Blank03   ewolfbos.bin
-Boss_Blank02   ewolfbos.bin
-Boss_Blank01   ewolfbos.bin
+Boss_Exanima2  ebexanim.bin
+Boss_Final   eb_unnamed.bin
+Boss_Final2   eb_unnamed.bin
 
 # placehold
 Enemy_Blank97	e_yak.bin
